@@ -61,10 +61,12 @@ function Page(props) {
     <>
       <h3 className='mt-5 text-center bg-warning d-grid gap-2 col-2 mx-auto'>Dynamic page</h3>
 
-      <h1 className='text-center mt-5 text-primary'>{props.data.name}</h1>
-      <h2 className='text-center'>{props.data.color}</h2>
-      <h2 className='text-center text-danger'>{props.data.num}</h2>
-      <h2 className='text-center text-secondary'>{props.data.state}</h2>
+      <div className="card d-grid gap-2 col-2 mx-auto">
+        <h1 className='text-center mt-5 text-primary'>{props.data.name}</h1>
+        <h2 className='text-center'>{props.data.color}</h2>
+        <h2 className='text-center text-danger'>{props.data.num}</h2>
+        <h2 className='text-center text-secondary'>{props.data.state}</h2>
+        </div>
       <br/>
 
       <Link href='/routing'>
