@@ -1,0 +1,37 @@
+[
+  {
+    "name":"name0",
+    "id":0,
+    "state":"Colorado",
+    "num" : 33,
+    "color": "blue"
+  },
+  {
+    "name":"name1",
+    "id":1,
+    "state":"Oklahoma",
+    "num" : 22,
+    "color": "red"
+  },
+  {
+    "name":"name2",
+    "id":2,
+    "state":"Florida",
+    "num" : 55,
+    "color": "green"
+  },
+  {
+    "name":"name3",
+    "id":3,
+    "state":"Alaska",
+    "num" : 44,
+    "color": "orange"
+  },
+  {
+    "name":"name4",
+    "id":4,
+    "state":"Hawaii",
+    "num" : 66,
+    "color": "purple"
+  }
+]

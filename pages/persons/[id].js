@@ -24,7 +24,9 @@ export async function getStaticPaths() {
 
 
 export default function Entry({ itemData }) {
-   const {title, email, phone, birthdate ,related,relatedName} = itemData.data
+   const {title, email,skills, phone, birthdate ,related,relatedName} = itemData.data
+
+
   return (
     <Layout>
          <h2 className='text-center text-uppercase fw-bold text-decoration-underline mt-5'>person Info</h2>
@@ -32,9 +34,9 @@ export default function Entry({ itemData }) {
           <p className="text-center fs-2">Name: <span className='fw-bold text-primary'>{title}</span></p>
           <p className="text-center fs-2">Phone:  {phone}</p>
           <p className="text-center fs-2">DOB: {birthdate}</p>
-          <p className="text-center fs-2">Email: {email}</p>
-          
-         
+          <a href={'mailto:' + email} className="text-center vstack mx-auto fs-2">Email: {email}</a>
+          <p className="text-center fs-2">Skills: <span className='fw-bold text-danger'>{skills}</span></p>
+
 
          <Link href="/">
             <a className="btn btn-primary mt-3 vstack mx-auto w-25 mt-5">← Back to home</a>

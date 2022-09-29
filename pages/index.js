@@ -25,11 +25,16 @@ export default function Home({ allData }) {
            allData.map(({ id,data }) => (
             <Link key={id}  href={`/persons/${id}`}>
               <a className="name border border-secondary p-4">{data.title}</a>
-              
             </Link>
           ))
           : null }
         </div>
+
+        <Link href='/routing'>
+        <a className='d-grid gap-2 col-3 mx-auto bg-light mt-5'>
+          <h2 className='vstack mx-auto'>Routing page</h2>
+        </a>
+      </Link>
 
         <style jsx global>{`
         .uvod {
