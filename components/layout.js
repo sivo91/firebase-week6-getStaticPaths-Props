@@ -1,6 +1,11 @@
 
 
+
 export default function Layout( { children } ) {
-  return  <div> {children}</div>
+  return  (
+    <>
+     { children }  {/* children vsetko dodane */}
+    </>
+  )
   ;
 }

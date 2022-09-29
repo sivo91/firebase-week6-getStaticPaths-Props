@@ -61,7 +61,7 @@ export function getStaticPaths() {
 function Page(props) {
   return (
     <>
-      <h3 className='mt-5 text-center bg-warning d-grid gap-2 col-2 mx-auto'>Dynamic page</h3>
+      <h3 className='mt-5 text-center bg-warning d-grid gap-2 col-2 mx-auto'>Dynamic page JSON file</h3>
 
       <div className="card d-grid gap-2 col-2 mx-auto">
         <h1 className='text-center mt-5 text-primary'>{props.data.name}</h1>

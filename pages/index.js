@@ -1,6 +1,6 @@
 //import { persons } from 'firebase-admin';
 import Link from 'next/link';
-import Layout from '../components/layout';
+//import Layout from '../components/layout';
 import { Entry } from '../lib/data';
 
 export async function getStaticProps() {
@@ -17,8 +17,8 @@ export default function Home({ allData }) {
 
 
   return (
-      <Layout>
-        <h1 className='text-center mt-5 text-warning fst-italic'>Firebase</h1>
+      <>
+        <h1 className='text-center mt-5 text-warning fst-italic'>Firebase App</h1>
        
         <div className="uvod">
           {allData ?
@@ -30,11 +30,11 @@ export default function Home({ allData }) {
           : null }
         </div>
 
-        <Link href='/routing'>
+        {/* <Link href='/routing'>
         <a className='d-grid gap-2 col-3 mx-auto bg-light mt-5'>
           <h2 className='vstack mx-auto'>Routing page</h2>
         </a>
-      </Link>
+      </Link> */}
 
         <style jsx global>{`
         .uvod {
@@ -55,7 +55,7 @@ export default function Home({ allData }) {
           box-shadow:1px 1px 20px gray;
          }
         `}</style>
-      </Layout>
+      </>
   );
 
 

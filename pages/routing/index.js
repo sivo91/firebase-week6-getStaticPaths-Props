@@ -15,7 +15,7 @@ const Data = ({ data }) => {
 
   return (
     <>
-      <div className="text-center mt-5"> index.js </div>   
+      <h3 className="text-center mt-5"> getStaticProps from Json file </h3>   
       <br/>
 
        {
