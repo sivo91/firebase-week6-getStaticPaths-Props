@@ -44,8 +44,10 @@ export function getStaticProps(staticProps) {
 
 
 export function getStaticPaths() {
+
+
   return {
-     paths: [
+     paths: [   // lebo viem z JSON file ze mam 5 stran ale inak map meth!
       {params: {id: "0"}}, 
       {params: {id: "1"}},
       {params: {id: "2"}}, 

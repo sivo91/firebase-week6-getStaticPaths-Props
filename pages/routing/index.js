@@ -1,6 +1,8 @@
 import Link from "next/link"
 import data from '../../JSON/data.json'
 
+
+
 // getStaticProps from JSON file
 export async function getStaticProps(context) {
   return {

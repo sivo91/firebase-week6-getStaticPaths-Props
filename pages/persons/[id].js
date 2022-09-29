@@ -1,6 +1,6 @@
 
 import Link from 'next/link';
-import Layout from '../../components/layout';
+//import Layout from '../../components/layout';
 import { getIds, getData } from '../../lib/data';
 
 export async function getStaticProps({ params }) {
@@ -28,7 +28,7 @@ export default function Entry({ itemData }) {
 
 
   return (
-    <Layout>
+    <>
          <h2 className='text-center text-uppercase fw-bold text-decoration-underline mt-5'>person Info</h2>
 
           <p className="text-center fs-2">Name: <span className='fw-bold text-primary'>{title}</span></p>
@@ -61,6 +61,6 @@ export default function Entry({ itemData }) {
            : null
          }
       
-    </Layout>
+    </>
   );
 }
